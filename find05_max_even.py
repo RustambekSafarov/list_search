@@ -6,7 +6,7 @@ def find_max_even(data):
     returns: maximum even number in the list
     """
     if data[0]%2==0:
-        m = 0
+        m = data[0]
     for i in data:
         if i%2==0:
             if m < i:
