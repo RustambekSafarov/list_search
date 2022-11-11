@@ -10,6 +10,6 @@ def find_min_even(data):
         if i%2==0:
             if m > i:
                 m = i
-    
-    return m if m!=1000 else -1
-print(find_min_even())
+
+    return m if m!=1000 else -1 
+print(find_min_even([1, 8, 2, 8, 5]))
