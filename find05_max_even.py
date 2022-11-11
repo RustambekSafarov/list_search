@@ -5,13 +5,11 @@ def find_max_even(data):
         data: list of numbers
     returns: maximum even number in the list
     """
-    m = 0
-    if data[0]%2==0:
-        m = data[0]
+    m = -1000
     for i in data:
         if i%2==0:
             if m < i:
                 m = i
     
-    return m
-print(find_max_even([1, 14, 10, 8, 9]))
+    return m if m!=-1000 else -1
+print(find_max_even([1, -14, 1, 1, 9])) 
