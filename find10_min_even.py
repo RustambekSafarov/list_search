@@ -5,5 +5,11 @@ def find_min_even(data):
         data: list of numbers
     returns: minimum even number in the list
     """
-    return 0
-
+    m = 1000
+    for i in data:
+        if i%2==0:
+            if m > i:
+                m = i
+    
+    return m if m!=1000 else -1
+print(find_min_even())
